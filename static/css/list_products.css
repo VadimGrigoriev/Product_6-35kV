@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.href-create {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+}
+
+.table {
+    font-size: 16px;
+}
+
+.form form-inline {
+    line-height:2
+}

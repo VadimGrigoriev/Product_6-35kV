@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>Новый заказ</title>
+    <link rel="stylesheet" href="{% static 'css/create_product.css'%}">
+</head>
+<body>
+    <form method="POST" class="create-products">
+        {% csrf_token %}
+        <p>
+            <label>Введите номер заказа</label><br>
+            <input type="text" name="order_number" />
+        </p>
+        <p>
+            <label>Введите дату отгрузки</label><br>
+            <input type="date" name="shipment_date" />
+        </p>
+        <p>
+            <label>Введите серию терминала</label><br>
+            <input type="text" name="terminal_series" />
+        </p>
+        <p>
+            <label>Введите номер терминала</label><br>
+            <input type="number" name="serial_number" />
+        </p>
+        <input type="submit" value="Сохранить" >
+    </form>
+</body>
+</html>

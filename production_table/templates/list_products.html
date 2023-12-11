@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>Таблица производства</title>
+    <link rel="stylesheet" href="{% static 'css/list_products.css'%}">
+</head>
+<body>
+    <div class="button-create">
+        <button><a class="href-create" href="create/">Добавить заказ</a></button>
+    </div>
+    <br>
+    {% load render_table from django_tables2 %}
+    {% render_table list_products %}
+</body>
+</html>
